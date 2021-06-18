@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://osamakhalid.org/DHH21/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=device-width, initial-scale=5">
+
+   
+      <script type="text/javascript" src="./index_files/loader.js.download">
+      </script>
+      <script type="text/javascript">
+         google.charts.load('current', {packages: ['corechart']});     
+      </script><script type="text/javascript" charset="UTF-8" src="./index_files/loader.js(1).download"></script>
+
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+<title>Worker Friendliness Index</title>
+</style>
+<link id="load-css-0" rel="stylesheet" type="text/css" href="./index_files/tooltip.css"><link id="load-css-1" rel="stylesheet" type="text/css" href="./index_files/util.css"><script type="text/javascript" charset="UTF-8" src="./index_files/jsapi_compiled_default_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/jsapi_compiled_graphics_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/jsapi_compiled_ui_module.js.download"></script><script type="text/javascript" charset="UTF-8" src="./index_files/jsapi_compiled_corechart_module.js.download"></script></head>
+<body onload="listLanguage()">
+<center>
+<h2>Worker Friendliness Index</h2>
+<h4><a href="https://dhhackathon.wordpress.com/2021/05/28/cbaquest-final-report-incl-tools/">Click Here for Companion Blogpost!</a></h4>
+<h4><a href="http://osamakhalid.org/DHH21/about.html" target="_blank">About</a></h4>
+<p><!--Click on the button to open the dropdown menu.--></p>
+
+  	<!--
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+	-->
+
+	
+	<div class="container" id="languages"><div class="dropdown"><button onclick="myFunction()" class="dropbtn">Languages</button><div id="myDropdown" class="dropdown-content"><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;AM&#39;)">Amharic</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;BA&#39;)">Indonesian</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;BG&#39;)">Bulgarian</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;CS&#39;)">Czech</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;DA&#39;)">Danish</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;DE&#39;)">German</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;EL&#39;)">Greek</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;EN&#39;)">English</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;ES&#39;)">Spanish</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;ET&#39;)">Estonian</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;FI&#39;)">Finnish</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;FR&#39;)">French</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;HR&#39;)">Croatian</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;HU&#39;)">Hungarian</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;IT&#39;)">Italian</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;KM&#39;)">Central Khmer</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;LT&#39;)">Lithuanian</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;MT&#39;)">Maltese</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;NL&#39;)">Dutch</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;PL&#39;)">Polish</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;PT&#39;)">Portugese</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;RO&#39;)">Romanian</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;SK&#39;)">Slovak</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;SL&#39;)">Slovene</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;SR&#39;)">undefined</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;SV&#39;)">Swedish</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;TR&#39;)">Turkish</a><a href="http://osamakhalid.org/DHH21/index.html#" onclick="getCountry(&#39;VI&#39;)">Vietnamese</a></div></div></div>
+	
+
+<p>
+
+  	<!--
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+	-->
+	</p><div class="container" id="country_list"></div>
+  <p>
+	</p><div class="container" id="CBA_list"></div>
+<p>
+
+
+</p><p>
+</p><div class="container" id="metrics"></div>	
+	
+<div class="container" id="graph"></div>	
+<div id="container" style="width: 550px; height: 400px; margin: 0 auto">
+<div>
+  <canvas id="myChart"></canvas>
+
+</div>
+
+
+<div class="tableauPlaceholder" id="viz1622187492053" style="position: relative; width: 100%; height: 412.5px; overflow: hidden; display: block;"><noscript><a href='#'><img alt='#CBAQuest - Worker Friendliness Index (average per country) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CB&#47;CBA-Finalviz&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><script src="./index_files/viz_v1.js.download"></script><iframe frameborder="0" marginheight="0" marginwidth="0" title="Data Visualization" allowtransparency="true" allowfullscreen="true" class="tableauViz" style="display: block; width: 100%; height: 412.5px; margin: 0px; padding: 0px; border: none;" src="./index_files/Sheet1.html"></iframe></div>                <script type="text/javascript">                    var divElement = document.getElementById('viz1622187492053');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+<script src="./index_files/chart.js.download"></script>
+
+
+
+</div></center>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+function myFunctionC() {
+  document.getElementById("myDropdownC").classList.toggle("show");
+}
+
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function listLanguage() {
+    langKey={'en':'English','da':'Danish','mt':'Maltese','de':'German','sl':'Slovene','lt':'Lithuanian','sv':'Swedish','tr':'Turkish','it':'Italian','fr':'French','fi':'Finnish','bg':'Bulgarian','sk':'Slovak','cs':'Czech','pt':'Portugese','nl':'Dutch','el':'Greek','ro':'Romanian','hr':'Croatian','es':'Spanish','hu':'Hungarian','et':'Estonian','pl':'Polish','km':'Central Khmer','vi':'Vietnamese','ba':'Indonesian','am':'Amharic'}
+  	var url="https://raw.githubusercontent.com/dhh21/CBAQuest/main/CBA_Map.csv";
+  	function httpGet(theUrl)
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+        xmlHttp.send( null );
+        return xmlHttp.responseText;
+    }
+	function onlyUnique(value, index, self) {
+	  return self.indexOf(value) === index;
+	}
+    var rawText= httpGet(url);
+    langs=[];
+    var text=rawText.split('\n')
+    for (k=0;k<text.length;k++) {
+    	row = text[k].split('\t')[3];
+    	
+    	langs.push(row)
+    	
+    }
+    var unique = langs.filter(onlyUnique)
+    unique = unique.filter(function( element ) {
+   return element !== undefined;
+});
+       unique = unique.filter(function( element ) {
+   return element !== 'undefined';
+});
+   
+    
+    unique.sort();
+    console.log(unique)
+    str=''
+    for (k=0;k<unique.length;k++){
+      if (unique[k]!='undefined'){
+		//str=str+'<button type="button" class="btn" onclick="getCBA('+"'"+unique[k].toUpperCase()+"'"+")>"+unique[k].toUpperCase()+'</button>'
+    	str=str+'<a href="#" onclick="getCountry('+"'"+unique[k].toUpperCase()+"'"+')">'+ langKey[unique[k]]+'</a>'}
+    }
+    //console.log(str)
+    str='<div class="dropdown"><button onclick="myFunction()" class="dropbtn">Languages</button><div id="myDropdown" class="dropdown-content">'+str+'</div></div></div>'
+
+//str='<a href="#home">Home</a>\n<a href="#about">CH</a>\n<a href="#contact">FR</a>\n'
+	document.getElementById("languages").innerHTML = str
+}
+
+
+function getCountry(lang) {
+    var url="https://raw.githubusercontent.com/dhh21/CBAQuest/main/CBA_Map.csv";
+    function httpGet(theUrl)
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+        xmlHttp.send( null );
+        return xmlHttp.responseText;
+    }
+  function onlyUnique(value, index, self) {
+    return self.indexOf(value) === index;
+  }
+    var rawText= httpGet(url);
+    country=[];
+    var text=rawText.split('\n')
+    for (k=0;k<text.length-1;k++) {
+      row = text[k].split('\t');
+      if (row[3].toUpperCase()==lang){
+        country.push(row[2])
+      }
+      
+    }
+    var unique = country.filter(onlyUnique)
+    unique.sort();
+    console.log(unique)
+    str=''
+
+    for (k=0;k<unique.length;k++){
+    //str=str+'<button type="button" class="btn" onclick="getCBA('+"'"+unique[k].toUpperCase()+"'"+")>"+unique[k].toUpperCase()+'</button>'
+      str=str+'<a href="#" onclick="getCBA('+"'"+unique[k]+"'"+','+"'"+lang+"'"+')">'+ unique[k]+'</a>'
+    }
+    
+    console.log(str)
+    str='<div class="dropdown"><button onclick="myFunctionC()" class="dropbtn">Countries</button><div id="myDropdownC" class="dropdown-content">'+str+'</div></div></div>'
+
+//str='<a href="#home">Home</a>\n<a href="#about">CH</a>\n<a href="#contact">FR</a>\n'
+  document.getElementById("country_list").innerHTML = str
+}
+
+function getCBA(country,lang){
+	console.log(lang,country)
+	var url="https://raw.githubusercontent.com/dhh21/CBAQuest/main/CBA_Map.csv";
+  	function httpGet(theUrl)
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+        xmlHttp.send( null );
+        return xmlHttp.responseText;
+    }
+	
+    var rawText= httpGet(url);
+    CBAs=[];
+    var text=rawText.split('\n')
+    for (k=0;k<text.length-1;k++) {
+    	row = text[k].split('\t');
+    	if (row[3].toUpperCase()==lang && row[2]==country){
+    		CBAs.push(row[0])
+    	}
+    	
+    }
+	str=''
+    for (k=0;k<CBAs.length;k++){
+		//str=str+'<button type="button" class="btn" onclick="getCBA('+"'"+unique[k].toUpperCase()+"'"+")>"+unique[k].toUpperCase()+'</button>'
+    	str=str+'<a href="#" onclick="showMetric('+"'"+CBAs[k]+"'"+')">'+ CBAs[k]+'</a>'
+    }
+    //console.log(str)
+    str='<div class="dropdown"><button onclick="myFunction2()" class="dropbtn">Collective Bargaining Agreements</button><div id="myDropdown2" class="dropdown-content">'+str+'</div></div></div>'
+    document.getElementById("CBA_list").innerHTML = str
+}
+
+function showMetric(CBA){
+	    langKey={'en':'English','da':'Danish','mt':'Maltese','de':'German','sl':'Slovene','lt':'Lithuanian','sv':'Swedish','tr':'Turkish','it':'Italian','fr':'French','fi':'Finnish','bg':'Bulgarian','sk':'Slovak','cz':'Czech','pt':'Portugese','nl':'Dutch','el':'Greek','ro':'Romanian','hr':'Croatian','es':'Spanish','hu':'Hungarian','et':'Estonian','pl':'Polish','km':'Central Khmer','vi':'Vietnamese','ba':'Indonesian','am':'Amharic'}
+  console.log(CBA)
+	//document.getElementById("demo").innerHTML = "";
+	//document.getElementById("languages").innerHTML = "";
+	//document.getElementById("CBA_list").innerHTML = "";
+
+	var url="https://raw.githubusercontent.com/dhh21/CBAQuest/main/CBA_Map.csv";
+
+  	function httpGet(theUrl)
+    {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+        xmlHttp.send( null );
+        return xmlHttp.responseText;
+    }
+	
+    var rawText= httpGet(url);
+    
+    var text=rawText.split('\n')
+
+    for (k=0;k<text.length-1;k++) {
+    	row = text[k].split('\t');
+    	if (row[0]==CBA){
+    		data=row
+    	}
+    	
+    }
+    console.log(data[0])
+    console.log(1)
+
+    var Title=data[0];
+    var cba_id=data[1];
+    //console.log(cba_id)
+    //console.log(1)    
+    var country=data[2]
+    var lang=langKey[data[3]]
+    var year=data[4]
+    access=['',0,0]
+    //Accessibility
+    var url="https://raw.githubusercontent.com/dhh21/CBAQuest/main/CBA_accessibility.csv";
+	var rawText= httpGet(url);
+    var text=rawText.split('\n')
+	
+    for (k=0;k<text.length-1;k++) {
+    	row = text[k].split('\t');
+    	
+    	//console.log(row[0]==data[1])
+    	if (row[0]==cba_id){
+    		
+    		access=row
+    	}
+    	
+    }
+    readability=access[2]
+    lexDiv=access[3]
+    accs=access[4]
+    console.log(access)
+    otime=['',0,0,0,0]
+
+    var url='https://raw.githubusercontent.com/dhh21/CBAQuest/main/CBA_over.csv'
+	//var url="https://raw.githubusercontent.com/osama-khalid/DHH21/main/CBA_accessibility.csv";
+	var rawText= httpGet(url);
+    var text=rawText.split('\n')
+	
+    for (k=0;k<text.length-1;k++) {
+    	row = text[k].split('\t');
+    	
+    	//console.log(row[0]==data[1])
+    	if (row[0]==cba_id){
+    		
+    		otime=row
+    	}
+    	
+    }
+    if(otime[1]=='?'){
+    overtime=0
+    annuleav=0	
+    ALs=0
+    comp_scores=0
+    }else{
+overtime=otime[1]
+    annuleav=otime[2] 
+    ALs=otime[3]
+    comp_scores=otime[4]
+
+    }
+
+    console.log(otime)
+      gend=['',0,0,0,0,0]
+
+      var url='https://raw.githubusercontent.com/dhh21/CBAQuest/main/CBA_gender.csv'
+  //var url="https://raw.githubusercontent.com/osama-khalid/DHH21/main/CBA_accessibility.csv";
+  var rawText= httpGet(url);
+    var text=rawText.split('\n')
+  
+    for (k=0;k<text.length-1;k++) {
+      row = text[k].split('\t');
+      
+      //console.log(row[0]==data[1])
+      if (row[0]==cba_id){
+        
+        gend=row
+      }
+      
+    }
+    if(gend[1]=='?'){
+    GP=0
+    GE=0
+    SH=0
+    Disc=0
+    Eq=0
+    }else{
+    GP=gend[1]
+    GE=gend[2]
+    SH=gend[3]
+    Disc=gend[4]
+    Eq=gend[5]
+
+    }
+
+    str='<b>Title of CBA: </b>'+Title+'<br><br><br><b>Country: </b>'+country+'<br><b>Language: </b>'+lang+'<br><b>Year: </b>'+year+'<br><br><br><h3>Accessible Language: '+accs+'</h3><b>Readability: </b>'+readability+'<br><b>Lexical Density: </b>'+lexDiv+'<br><h3>OverTime/Annual Leave: '+otime[4]+'</h3><b>Overtime Provision: </b>'+otime[1]+'<br><b>Travel Allowance: </b>'+otime[2]+'<br><b>Days of Annual Leave: </b>'+otime[3]+'<br><h3>Equality: '+gend[5]+' </h3><b>Grievance Procedure: </b>'+gend[1]+'<br><b>Gender Equality: </b>'+gend[2]+'<br><b>Sexual Harassment: </b>'+gend[3]+'<br><b>Discrimination: </b>'+gend[4]+'<br><br><br><H4 align="left">Legend:<br> &leq; 1.5 = Not at all worker-friendly<br>1.5 &#8208; 2.5 = Little<br>2.5 &#8208; 3.5 = Neutral<br>3.5 &#8208; 4.5 = Very much<br>4.5+  = The most worker-friendly <br>according to chosen indicators</H4>'
+    
+    drawChart(accs,readability,lexDiv,comp_scores,overtime,annuleav,ALs,GP,GE,SH,Disc,Eq);
+    document.getElementById("metrics").innerHTML = str
+}
+function drawChart(accs,readability,lexDiv,comp_scores,overtime,annuleav,ALs,GP,GE,SH,Disc,Eq) {
+            // Define the chart to be drawn.
+            var data = google.visualization.arrayToDataTable([
+               ['Element', 'Density', { role: 'style' }],
+               ['Accessibility',  parseFloat(accs), '#FF0000'],
+               ['Readability',  parseFloat(readability), '#00BFFF'],
+               ['Lexical Density',  parseFloat(lexDiv), '#00BFFF'],
+               ['Overtime/Annual Leave',  parseFloat(comp_scores), '#FF0000'],
+               ['Overtime Provision',  parseFloat(overtime), '#00BFFF'],
+               ['Travel Allowance',  parseFloat(annuleav), '#00BFFF'],
+               ['Days fo Annual Leave',  parseFloat(ALs), '#00BFFF'],
+               ['Equality',parseFloat(Eq), '#FF0000'],
+               ['Grievance Procedure',parseFloat(GP), '#00BFFF'],
+               ['Gender Equality',parseFloat(GE), '#00BFFF'],
+               ['Sexual Harassment',parseFloat(SH), '#00BFFF'],
+               ['Discrimination',parseFloat(Disc), '#00BFFF']
+            ]);
+
+            var options = {title: 'Worker Friendliness Index',hAxis: {
+            	title :'Score',
+    viewWindow: {
+        min: 0,
+        max: 5
+    },
+    ticks: [0,1, 2, 3, 4,5] // display labels every 25
+}
+ ,vAxis: { 
+             title :'Metrics'},
+				legend: {position: 'none'},
+chartArea: {
+   top: 55,
+   width: '40%' 
+}
+      }; 
+
+            // Instantiate and draw the chart.
+            var chart = new google.visualization.BarChart(document.getElementById('container'));
+     
+            chart.draw(data, options);
+         }
+
+
+
+function chart(accs,readability,lexDiv,comp_scores,overtime,annuleav,ALs){
+const labels = [
+  'Language Accessibility',
+  'Readability',
+  'Lexical Diversity',
+  'OverTime/AnnualLeave',
+  'OverTime',
+  'Annual Leave',
+  'ALs',
+];
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'Worker Friendliness Index',
+    backgroundColor: 'rgb(255, 99, 132)',
+    borderColor: 'rgb(255, 99, 132)',
+    data: [accs,readability,lexDiv,comp_scores,overtime,annuleav,ALs],
+  }]
+};
+
+ const config = {
+  type: 'bar',
+  data,
+  options: {}
+};
+
+  var myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );         
+}
+</script>
+
+
+
+</body></html>
